@@ -1,0 +1,7 @@
+﻿services:
+  consoleapp: # Defines a service named 'consoleapp'
+    container_name: my_dotnet_console_app # Optional: assigns a specific name to the container
+    build:
+      context: . # Specifies the build context (the directory containing the Dockerfile and source code)
+                 # Assumes this docker-compose.yml file is in the root of your project
+      dockerfile: Dockerfile
